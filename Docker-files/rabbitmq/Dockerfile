@@ -1,0 +1,4 @@
+FROM rabbitmq:latest
+ENV RABBITMQ_DEFAULT_USER=test
+ENV RABBITMQ_DEFAULT_PASS=test
+RUN rabbitmqctl set_user_tags test administrator
